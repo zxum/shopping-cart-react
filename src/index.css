@@ -102,3 +102,97 @@ nav {
 .orange {
     background-color: #FF7A5F;
 }
+
+.shop-main {
+    display: flex;
+    justify-content: center;
+    background: #EDEBE6;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.title-text {
+    font-size: 3rem;
+}
+
+.background-tree {
+    background: url(./images/aesthetic_tree.png);
+    opacity: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    top: 25%;
+    left: 45%;
+    width: 627px;
+    height: 768px;
+    z-index: 1;
+}
+
+.box-wrapper {
+    width: 80%;
+    position: relative;
+    z-index: 10;
+    padding-top: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.package-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.package-img {
+    width: 200px;
+    height: 300px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+}
+
+#croatia-main {
+    background-image: url(./images/croatia_1.jpg);
+}
+
+#italy-main {
+    background-image: url(./images/italy_1.jpg);
+}
+
+#poland-main {
+    background-image: url(./images/poland_1.jpg);
+}
+
+#portugal-main {
+    background-image: url(./images/portugal_1.jpg);
+}
+
+#slovenia-main {
+    background-image: url(./images/slovenia_1.jpg);
+}
+
+#spain-main {
+    background-image: url(./images/spain_1.jpg);
+}
+
+.location-text {
+    font-size: 2.75rem;
+}
