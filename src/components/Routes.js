@@ -9,12 +9,14 @@ import Navbar from './Navbar'
 function Routes() {
   return (
     <BrowserRouter>
-      <Navbar /> 
-      <Switch>
-        <Route exact path="/" component={Home} /> 
-        <Route exact path="/shop" component={Shop}/>
-        <Route path="/cart" component={Cart}/> 
-      </Switch>
+      <div className="main">
+        <Navbar /> 
+        <Switch>
+          <Route exact path="/" component={Home} /> 
+          <Route exact path="/shop" component={Shop}/>
+          <Route path="/cart" component={Cart}/> 
+        </Switch>
+      </div>
     </BrowserRouter>
   );
 }

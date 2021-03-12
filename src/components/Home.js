@@ -1,9 +1,15 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function Home() {
   return (
-    <div>
-      This is the Home Page
+    <div className="home-main">
+      <div className="box-wrapper">
+        <h1 className="splash-text">NOT ALL WHO WANDER ARE LOST</h1>
+        <Link to="/shop">
+        <button className="btn rounded orange">SEE EXPERIENCES</button>
+        </Link>
+      </div>
     </div>
   )
 }

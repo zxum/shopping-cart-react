@@ -8,7 +8,9 @@
     padding: 0;
 }
 
-html {
+html,
+body,
+#root {
     font-family: 'Poiret One', cursive;
     height: 100vh;
     width: 100vw;
@@ -43,4 +45,60 @@ nav {
 .flex-nav a {
     text-decoration: none;
     color: #000;
+}
+
+.flex-nav a:hover {
+    color: #BF918A;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home-main {
+    background: #007F5F url(./images/background_splash.jpg) no-repeat fixed center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+    max-width: 1000px;
+}
+
+.splash-text {
+    margin-top: 40vh;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+}
+
+.btn {
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.rounded {
+    border-radius: 1000px;
+}
+
+.orange {
+    background-color: #FF7A5F;
 }
