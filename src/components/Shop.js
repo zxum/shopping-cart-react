@@ -1,6 +1,8 @@
 import React from 'react'
 import catalog from '../data/catalog.json'
 
+import ShopItem from './ShopItem'
+
 function Shop() {
   let data = catalog
   console.log(data)
@@ -11,42 +13,26 @@ function Shop() {
         <h1 className="title-text">EXPERIENCES</h1>
         <div className="row">
           <div className="column">
-            <div className="package-wrapper">
-              <div id="croatia-main" className="package-img"></div>
-              <h3 className="location-text">CROATIA</h3>
-            </div>
+          <div className="package-wrapper">
+            <ShopItem item={catalog[0]}/>
+          </div>
           </div>
           <div className="column">
-            <div className="package-wrapper">
-              <div id="italy-main" className="package-img"></div>
-              <h3 className="location-text">ITALY</h3>
-            </div>
+            <ShopItem item={catalog[1]}/>
           </div>
           <div className="column">
-            <div className="package-wrapper">
-              <div id="poland-main" className="package-img"></div>
-              <h3 className="location-text">POLAND</h3>
-            </div>
+            <ShopItem item={catalog[2]}/>
           </div>
         </div>
         <div className="row">
           <div className="column">
-            <div className="package-wrapper">
-              <div id="portugal-main" className="package-img"></div>
-              <h3 className="location-text">PORTUGAL</h3>
-            </div>
+            <ShopItem item={catalog[3]}/>
           </div>
           <div className="column">
-            <div className="package-wrapper">
-              <div id="slovenia-main" className="package-img"></div>
-              <h3 className="location-text">SLOVENIA</h3>
-            </div>
+            <ShopItem item={catalog[4]}/>
           </div>
           <div className="column">
-            <div className="package-wrapper">
-              <div id="spain-main" className="package-img"></div>
-              <h3 className="location-text">SPAIN</h3>
-            </div>
+            <ShopItem item={catalog[5]}/>
           </div>
         </div>
       </div>
