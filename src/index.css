@@ -2,8 +2,45 @@
 
     font-family: 'Poiret One', cursive; */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poiret One', cursive;
+    height: 100vh;
+    width: 100vw;
+}
+
 body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+    font-family: 'Comfortaa', cursive;
+    padding: 1rem 2rem;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.flex-nav a {
+    text-decoration: none;
+    color: #000;
 }
