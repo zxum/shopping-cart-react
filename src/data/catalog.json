@@ -1,0 +1,157 @@
+[{
+        "id": 0,
+        "name": "croatia",
+        "price": 550,
+        "imgs": [
+            "croatia_1.jpg",
+            "croatia_2.jpg",
+            "croatia_3.jpg",
+            "croatia_4.jpg"
+        ],
+        "includes": [
+            "Transport",
+            "Breakfast at Hotel",
+            "Hotel Room"
+        ],
+        "itinerary": [
+            "Rovinj",
+            "Mediterranean Town",
+            "Coastline",
+            "Church of St Euphemia"
+        ],
+        "duration": {
+            "nights": 2,
+            "days": 3
+        }
+    },
+    {
+        "id": 1,
+        "name": "italy",
+        "price": 920,
+        "imgs": [
+            "italy_1.jpg",
+            "italy_2.jpg",
+            "italy_3.jpg",
+            "italy_4.jpg"
+        ],
+        "includes": [
+            "Transport",
+            "Breakfast at Hotel",
+            "Hotel Room"
+        ],
+        "itinerary": [
+            "Naples",
+            "Sorento",
+            "Piazza dei Martiri",
+            "Coastline"
+        ],
+        "duration": {
+            "nights": 2,
+            "days": 3
+        }
+    },
+    {
+        "id": 2,
+        "name": "poland",
+        "price": 890,
+        "imgs": [
+            "poland_1.jpg",
+            "poland_2.jpg",
+            "poland_3.jpg",
+            "poland_4.jpg"
+        ],
+        "includes": [
+            "Transport",
+            "Breakfast at Hotel",
+            "Hotel Room"
+        ],
+        "itinerary": [
+            "Roosevelta Street",
+            "Lodz",
+            "Zamosc",
+            "Shopping District"
+        ],
+        "duration": {
+            "nights": 3,
+            "days": 4
+        }
+    },
+    {
+        "id": 3,
+        "name": "portugal",
+        "price": 1100,
+        "imgs": [
+            "portugal_1.jpg",
+            "portugal_2.jpg",
+            "portugal_3.jpg",
+            "portugal_4.jpg"
+        ],
+        "includes": [
+            "Transport",
+            "Breakfast at Hotel",
+            "Hotel Room"
+        ],
+        "itinerary": [
+            "Lagos, Algarve Region",
+            "Arc de la Rua Augusta",
+            "Art District",
+            "Casa Do Alentejo"
+        ],
+        "duration": {
+            "nights": 3,
+            "days": 4
+        }
+    },
+    {
+        "id": 4,
+        "name": "slovenia",
+        "price": 540,
+        "imgs": [
+            "slovenia_1.jpg",
+            "slovenia_2.jpg",
+            "slovenia_3.jpg",
+            "slovenia_4.jpg"
+        ],
+        "includes": [
+            "Transport",
+            "Breakfast at Hotel",
+            "Hotel Room"
+        ],
+        "itinerary": [
+            "Predjama Castle in Postojna",
+            "Izola",
+            "Residential District",
+            "Marina in Adriatic Sea"
+        ],
+        "duration": {
+            "nights": 2,
+            "days": 3
+        }
+    },
+    {
+        "id": 5,
+        "name": "spain",
+        "price": 1200,
+        "imgs": [
+            "spain_1.jpg",
+            "spain_2.jpg",
+            "spain_3.jpg",
+            "spain_4.jpg"
+        ],
+        "includes": [
+            "Transport",
+            "Breakfast at Hotel",
+            "Hotel Room"
+        ],
+        "itinerary": [
+            "Architecture & Design District",
+            "Plaza de la Cibeles",
+            "Plaza Mayor",
+            "Historical District"
+        ],
+        "duration": {
+            "nights": 4,
+            "days": 5
+        }
+    }
+]
