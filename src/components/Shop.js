@@ -1,6 +1,5 @@
 import React from 'react'
 import catalog from '../data/catalog.json'
-
 import ShopItem from './ShopItem'
 
 function Shop() {

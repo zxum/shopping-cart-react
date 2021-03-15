@@ -1,5 +1,4 @@
 import React from 'react'
-import CartItem from './CartItem'
 import {Link} from 'react-router-dom'
 import catalog from '../data/catalog.json'
 
@@ -38,12 +37,12 @@ function Cart(props) {
           <small>${product.price} x {quantity}</small>
         </td>
         <td className="quantity-display center-align">
-          <i className="fas fa-caret-up" onClick={()=>{props.handleIncrementQuantity(id)}}></i>
+          <i className="fas fa-caret-up" onClick={()=>{props.handleIncrementQuantity(product)}}></i>
           <p>{quantity}</p>
-          <i className="fas fa-caret-down" onClick={()=>{props.handleDecrementQuantity(id)}}></i>
+          <i className="fas fa-caret-down" onClick={()=>{props.handleDecrementQuantity(product)}}></i>
         </td>
         <td className="center-align">
-          <i className="fas fa-trash-alt" onClick={()=>{props.handleRemoveItem(id)}}></i>
+          <i className="fas fa-trash-alt" onClick={()=>{props.handleRemoveItem(product)}}></i>
         </td>
       </tr>
     )

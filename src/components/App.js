@@ -5,6 +5,9 @@ import Shop from './Shop'
 import Cart from './Cart'
 import Navbar from './Navbar'
 import Product from './Product'
+import {toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+toast.configure()
 
 
 
@@ -21,18 +24,23 @@ function App() {
       newCart[item.id] = 1 
       setCart(newCart)
     }
+    toast(`Added ${capitalize(item.name)} package to cart`)
   }
 
-  function handleIncrementQuantity(id) {
-    console.log("Incrementing")
+  function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1)
+  }
+
+  function handleIncrementQuantity(item) {
+    let id = item.id
     let newCart = cart 
     newCart[id] = newCart[id] + 1 
     setCart({...newCart})
-    console.log({cart})
+    toast(`Increased quantity of ${capitalize(item.name)} packages to ${cart[id]}`)
   }
 
-  function handleDecrementQuantity(id) {
-    console.log("Decrementing")
+  function handleDecrementQuantity(item) {
+    let id = item.id
     let newCart = cart 
     if(newCart[id] === 1) {
       delete newCart[id] 
@@ -40,12 +48,15 @@ function App() {
       newCart[id] = newCart[id] - 1
     }
     setCart({...newCart})
+    toast(`Reduced quantity of ${capitalize(item.name)} packages to ${cart[id]}`)
   }
 
-  function handleRemoveItem(id) {
+  function handleRemoveItem(item) {
+    let id = item.id
     let newCart = cart 
     delete newCart[id]
     setCart({...newCart})
+    toast(`Removed ${capitalize(item.name)} package from cart!`)
   }
 
   return (
