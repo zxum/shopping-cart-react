@@ -13,8 +13,8 @@ Check out the live version [here](https://zxum.github.io/shopping-cart-react/).
 ![demo](./public/shopping-cart-demo.gif)
 
 ## Modules Used 
-*[React Router Dom](https://github.com/ReactTraining/react-router)
-*[React Toastify](https://fkhadra.github.io/react-toastify/introduction/)
+* [React Router Dom](https://github.com/ReactTraining/react-router)
+* [React Toastify](https://fkhadra.github.io/react-toastify/introduction/)
 
 ## Image Credits 
 All images are from [Kaboompics](https://kaboompics.com/gallery/photoshoots) 
