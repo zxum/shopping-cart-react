@@ -8,7 +8,7 @@ import Product from './Product'
 
 
 
-function Routes() {
+function App() {
   return (
     <BrowserRouter>
       <div className="main">
@@ -24,4 +24,4 @@ function Routes() {
   );
 }
 
-export default Routes;
+export default App;
