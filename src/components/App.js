@@ -64,12 +64,12 @@ function App() {
       <div className="main">
         <Navbar /> 
         <Switch>
-          <Route exact path="/" component={Home} /> 
-          <Route exact path="/shop" component={Shop}/>
-          <Route path="/shop/:id" 
+          <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} /> 
+          <Route exact path={process.env.PUBLIC_URL + "/shop"} component={Shop}/>
+          <Route path={process.env.PUBLIC_URL + "/shop/:id"} 
                 render={(props)=>(<Product {...props} 
                 handleAddToCart={handleAddToCart} />)} />
-          <Route path="/cart" 
+          <Route path={process.env.PUBLIC_URL + "/cart" } 
                 render={(props)=>(<Cart {...props} 
                 cart={cart} 
                 handleDecrementQuantity={handleDecrementQuantity} 

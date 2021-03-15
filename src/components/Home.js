@@ -6,7 +6,7 @@ function Home() {
     <div className="home-main">
       <div className="box-wrapper">
         <h1 className="splash-text">NOT ALL WHO WANDER ARE LOST</h1>
-        <Link to="/shop">
+        <Link to={process.env.PUBLIC_URL + "/shop"}>
         <button className="btn rounded orange">SEE EXPERIENCES</button>
         </Link>
       </div>

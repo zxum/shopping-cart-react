@@ -24,10 +24,10 @@ function Cart(props) {
       <tr className="product-row">
         <td>
           <div className="product-name-cell">
-            <Link to={`/shop/${id}`}>
+            <Link to={process.env.PUBLIC_URL + `/shop/${id}`}>
               <img className="product-icon" src={requestImageFiles("./"+product.imgs[0]).default}/>
             </Link>
-            <Link to={`/shop/${id}`}> 
+            <Link to={process.env.PUBLIC_URL + `/shop/${id}`}> 
               <span>{product.name.toUpperCase()}</span>
             </Link>
           </div>
