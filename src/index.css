@@ -124,8 +124,8 @@ nav {
     background-size: cover;
     background-position: center center;
     position: fixed;
-    top: 25%;
-    left: 45%;
+    top: 25vh;
+    left: 50vw;
     width: 627px;
     height: 768px;
     z-index: 1;
@@ -195,4 +195,73 @@ nav {
 
 .location-text {
     font-size: 2.75rem;
+}
+
+.package-wrapper a {
+    text-decoration: none;
+    color: #000;
+}
+
+.brown {
+    background-color: #BF918A;
+}
+
+.product-main {
+    background: #EDEBE6;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+    align-items: center;
+}
+
+.product-wrapper {
+    display: flex;
+}
+
+.product-info {
+    background: url(./images/note_graphic.png) center no-repeat padding-box;
+    background-size: contain;
+    width: 491px;
+    height: 491px;
+}
+
+.product-text {
+    transform: rotate(4deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.product-photo {
+    height: 400px;
+    width: auto;
+    border: 10px solid #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.photos {
+    transform: rotate(-4deg) translate(30px, 50px);
+}
+
+.product-name {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-text ul li {
+    margin-left: 2rem;
+}
+
+.product-price {
+    margin-top: 1rem;
+}
+
+.product-price p {
+    color: #BF918A;
+    font-weight: bolder;
+    font-size: 2rem;
+    font-family: 'Comfortaa', cursive;
 }

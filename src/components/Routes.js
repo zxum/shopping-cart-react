@@ -4,6 +4,8 @@ import Home from './Home'
 import Shop from './Shop'
 import Cart from './Cart'
 import Navbar from './Navbar'
+import Product from './Product'
+
 
 
 function Routes() {
@@ -14,6 +16,7 @@ function Routes() {
         <Switch>
           <Route exact path="/" component={Home} /> 
           <Route exact path="/shop" component={Shop}/>
+          <Route path="/shop/:id" component={Product} />
           <Route path="/cart" component={Cart}/> 
         </Switch>
       </div>
