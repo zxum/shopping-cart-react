@@ -1,6 +1,54 @@
 import React from 'react'
+import CartItem from './CartItem'
+import {Link} from 'react-router-dom'
+import catalog from '../data/catalog.json'
 
-function Cart() {
+function Cart(props) {
+  let cart = props.cart
+  console.log(props)
+  let requestImageFiles = require.context('../images',true ,/.jpg$/) 
+
+  let totalPrice = Object.keys(cart).reduce((total, id) => {
+    let product = catalog.find(i => i.id == id)
+    let quantity = cart[id]
+    let price = product.price * quantity
+    return total + price 
+  },0)
+
+  let totalQuantity = Object.values(cart).reduce((total, num) => {return total + num},0)
+
+  let productRows = Object.keys(cart).map(id => {
+    let product = catalog.find(i => i.id == id)
+    let quantity = cart[id]
+
+    return (
+      <tr className="product-row">
+        <td>
+          <div className="product-name-cell">
+            <Link to={`/shop/${id}`}>
+              <img className="product-icon" src={requestImageFiles("./"+product.imgs[0]).default}/>
+            </Link>
+            <Link to={`/shop/${id}`}> 
+              <span>{product.name.toUpperCase()}</span>
+            </Link>
+          </div>
+        </td>
+        <td className="center-align">
+          <p>${product.price * quantity}</p>
+          <small>${product.price} x {quantity}</small>
+        </td>
+        <td className="quantity-display center-align">
+          <i className="fas fa-caret-up" onClick={()=>{props.handleIncrementQuantity(id)}}></i>
+          <p>{quantity}</p>
+          <i className="fas fa-caret-down" onClick={()=>{props.handleDecrementQuantity(id)}}></i>
+        </td>
+        <td className="center-align">
+          <i className="fas fa-trash-alt" onClick={()=>{props.handleRemoveItem(id)}}></i>
+        </td>
+      </tr>
+    )
+  })
+
   return (
     <div className="cart-main">
       <div className="cart-wrapper">
@@ -11,29 +59,11 @@ function Cart() {
             <th className="center-align">Quantity</th>
             <th className="center-align">Remove</th>
           </tr>
-          <tr className="product-row">
-            <td>
-              <div className="product-name-cell">
-                <img className="product-icon"/>
-                <span>SPAIN</span>
-              </div>
-            </td>
-            <td className="center-align">
-              $500
-            </td>
-            <td className="quantity-display center-align">
-              <i class="fas fa-caret-up"></i>
-              <p>1</p>
-              <i class="fas fa-caret-down"></i>
-            </td>
-            <td className="center-align">
-              <i class="fas fa-trash-alt"></i>
-            </td>
-          </tr>
+          {productRows}
           <tr className="total-row">
             <td className="right-align">Total</td>
-            <td className="center-align">$500</td>
-            <td className="center-align">1</td>
+            <td className="center-align">${totalPrice}</td>
+            <td className="center-align">{totalQuantity}</td>
             <td></td>
           </tr>
         </table>

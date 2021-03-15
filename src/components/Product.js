@@ -1,10 +1,11 @@
 import React from 'react'
 import catalog from '../data/catalog.json'
 
-function Product({match}) {
-  let productId = match.params.id
+function Product(props) {
+  // console.log(props)
+  let productId = props.match.params.id
   let product = catalog.find(item => item.id == productId)
-  console.log(product)
+  // console.log(product)
 
   let requestImageFiles = require.context('../images',true,/.jpg$/) 
 
@@ -47,7 +48,7 @@ function Product({match}) {
       </div>
 
       <div className="add-to-cart">
-        <button className="btn rounded brown">ADD TO CART</button>
+        <button className="btn rounded brown" onClick={()=>{props.handleAddToCart(product)}}>ADD TO CART</button>
       </div>
       {/* <div className="background-tree"></div> */}
     </div>

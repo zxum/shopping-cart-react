@@ -27,6 +27,10 @@ nav {
     padding: 1rem 2rem;
 }
 
+i {
+    cursor: pointer;
+}
+
 .flex-nav {
     display: flex;
     justify-content: space-between;
@@ -330,4 +334,17 @@ img.product-icon {
 .wide-col {
     width: 200px;
     text-align: left;
+}
+
+small {
+    font-weight: lighter;
+    font-size: 0.7rem;
+}
+
+.product-row a {
+    text-decoration: none;
+}
+
+.product-row a:visited {
+    color: #BF918A;
 }
