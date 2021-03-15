@@ -4,13 +4,11 @@ import catalog from '../data/catalog.json'
 import ShopItem from './ShopItem'
 
 function Shop() {
-  let data = catalog
-  console.log(data)
 
   return (
     <div className="shop-main">
       <div className="box-wrapper">
-        <h1 className="title-text">EXPERIENCES</h1>
+        <h1 className="title-text">DESTINATIONS</h1>
         <div className="row">
           <div className="column">
           <div className="package-wrapper">
